@@ -17,3 +17,9 @@ When adding the cronjob, go to the bottom and add `*/15 * * * * /path_to_reposit
 
 A good guide to cronjobs is found at http://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/
 
+# Usage
+After everything is set up, there is nothing that need to be done. The cronjob will take care of running the script at regular intervals (when the user is logged in). To show the results, run `python /PATH_TO_FOLDER/print_to_terminal.py`. If a user would like to simply type `show_usage` in the terminal and get the same output, an alias can be made. To create an alias that lasts even after a log out and log in, edit the bashrc file, for example type `nano ~/.bashrc`. At the bottom, add `alias show_usage='python PATH_TO_FOLDER/print_to_terminal.py'. The alias will not take effect in the current terminal, but open a new one and it will work.
+
+
+
+
