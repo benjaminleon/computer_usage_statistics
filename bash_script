@@ -1,4 +1,4 @@
 #!/bin/bash
 
-python /home/ben/Documents/computer_usage_statistics/python_script.py $(date +%H)
+python PATH_TO_REPOSITORY/python_script.py $(date +%H)
 

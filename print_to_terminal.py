@@ -1,6 +1,6 @@
 #!/usr/bin/env python
     
-with open('/home/ben/Documents/computer_usage_statistics/histogram.txt', 'r') as myfile:
+with open('PATH_TO_REPOSITORY/histogram.txt', 'r') as myfile:
     data = myfile.read()
 
 splitted_data = data.splitlines()

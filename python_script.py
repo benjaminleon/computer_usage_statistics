@@ -5,7 +5,7 @@ import sys
 
 hour = int(sys.argv[1])
     
-with open('/home/ben/Documents/computer_usage_statistics/histogram.txt', 'r') as myfile:
+with open('PATH_TO_REPOSITORY/histogram.txt', 'r') as myfile:
     data = myfile.read()
 
 newdata = data.splitlines()
@@ -19,6 +19,6 @@ tmpstr = tmpstr.replace(",","\n")
 tmpstr = tmpstr.replace("[","");
 tmpstr = tmpstr.replace("]","");
 
-with open('/home/ben/Documents/computer_usage_statistics/histogram.txt', 'w') as myfile:
+with open('PATH_TO_REPOSITORY/histogram.txt', 'w') as myfile:
     myfile.write(tmpstr)
 
