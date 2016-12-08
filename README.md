@@ -6,11 +6,11 @@ In the current setup (which is easy to modify), Cronjob runs a script 4 times pe
 An accompanying function prints an easily readable version of the histogram to the terminal.
 
 # Setting things up
-Type in the terminal `chmod +x usage_bash_script` to give the shell permission to run the script. This is neccesary for the cronjob to work.
+Type in the terminal `chmod +x bash_script` to give the shell permission to run the script. This is neccesary for the cronjob to work.
 
 To schedule a cronjob, type `crontab -e` in the terminal. Be careful not to type `crontab -r`, which will remove all crontab settings.
 
-To the bottom, add `*/15 * * * * /path_to_repository/usage_bash_script`, press ctrl + O to save, accept with enter and ctrl + x to exit. The terminal should output "crontab: installing new crontab" if everything went OK.
+To the bottom, add `*/15 * * * * /path_to_repository/bash_script`, press ctrl + O to save, accept with enter and ctrl + x to exit. The terminal should output "crontab: installing new crontab" if everything went OK.
 
 Make sure the paths are correctly setup for your computer. Replace all occurrences of /home/ben/Documents/ with whatever path you have to the repository folder. Try `grep /home/ben/ *` from the repository folder to find all such occurences.
 
