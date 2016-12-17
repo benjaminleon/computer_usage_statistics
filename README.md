@@ -1,6 +1,6 @@
 # computer_usage_statistics
 
-Keeps track of what hours of the day the computer is running and logged in on the user. It requires on Python  and unix/linux. Tested on Ubuntu 15.10 and Linux Mint 17 with python 2.7.
+Keeps track of what hours of the day the computer is running and logged in on the user. It requires Python  and unix/linux. Tested on Linux Mint 17 and python 2.7.
 
 In the current setup (which is easy to modify), Cronjob runs a script 4 times per hour which increments the count for that hour in a histogram.
 An accompanying function prints an easily readable version of the histogram to the terminal.
