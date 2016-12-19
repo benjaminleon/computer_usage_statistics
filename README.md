@@ -22,7 +22,7 @@ When adding the cronjob, go to the bottom and add `*/15 * * * * /path_to_reposit
 
 A good guide to cronjobs is found at http://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/
 
-# Usage
+## Usage
 After everything is set up, the cronjob will take care of running the script at regular intervals (when the user is logged in).
 
 To show the results, run `python /PATH_TO_FOLDER/print_to_terminal.py`.
