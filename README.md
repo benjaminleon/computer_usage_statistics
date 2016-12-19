@@ -1,5 +1,5 @@
 ## computer_usage_statistics
-Keeps track of what hours of the day the computer is running and logged in on the user. It requires Python  and unix/linux. Tested on Linux Mint 17 and python 2.7.
+Keeps track of what hours of the day the computer is running and logged in on the user. 
 
 In the current setup (which is easy to modify), Cronjob runs a script 4 times per hour which increments the count for that hour in a histogram.
 An accompanying function prints an easily readable version of the saved data to the terminal.
@@ -9,6 +9,8 @@ An accompanying function prints an easily readable version of the saved data to 
 This project was created in an experiment with cronjobs. It also supports another project by finding the most likely hour for a scheduling event to occur. The project which needed this is found at www.github.com/benjiyo/song_list
 
 ## Setting things up
+
+Requirements are and unix/linux for scheduling script execution with cronjobs. It is tested on Linux Mint 17 and python 2.7.
 
 Run the installation script by navigating to the folder containing the files and enter `python installation.py` in your terminal. This will replace all occurences of PATH_TO_REPOSITORY with the actual path to the repository on your computer.
 
