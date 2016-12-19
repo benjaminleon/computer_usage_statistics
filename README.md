@@ -1,11 +1,14 @@
-# computer_usage_statistics
-
+## computer_usage_statistics
 Keeps track of what hours of the day the computer is running and logged in on the user. It requires Python  and unix/linux. Tested on Linux Mint 17 and python 2.7.
 
 In the current setup (which is easy to modify), Cronjob runs a script 4 times per hour which increments the count for that hour in a histogram.
-An accompanying function prints an easily readable version of the histogram to the terminal.
+An accompanying function prints an easily readable version of the saved data to the terminal.
 
-# Setting things up
+## Motivation
+
+This project was created in an experiment with cronjobs. It also supports another project by finding the most likely hour for a scheduling event to occur. The project which needed this is found at www.github.com/benjiyo/song_list
+
+## Setting things up
 
 Run the installation script by navigating to the folder containing the files and enter `python installation.py` in your terminal. This will replace all occurences of PATH_TO_REPOSITORY with the actual path to the repository on your computer.
 
@@ -22,8 +25,8 @@ After everything is set up, the cronjob will take care of running the script at 
 
 To show the results, run `python /PATH_TO_FOLDER/print_to_terminal.py`.
 
-If a user would like to simply type `show_usage` in the terminal and get the same output, an alias can be made. To create an alias that lasts even after a log out and log in, edit the bashrc file, for example type `nano ~/.bashrc`. At the bottom, add `alias show_usage='python PATH_TO_FOLDER/print_to_terminal.py', with PATH_TO_FOLDER as your actual path to the folder. The alias will not take effect in the current terminal, but open a new one and it will work for that one and all the other terminals you open.
+If a user would like to simply type `show_usage` in the terminal and get the same output, an alias can be made. To create an alias that lasts even after a log out and log in, edit the bashrc file, for example type `nano ~/.bashrc`. At the bottom, add `alias show_usage='python PATH_TO_FOLDER/print_to_terminal.py'`, with PATH_TO_FOLDER as your actual path to the folder. The alias will not take effect in the current terminal, but open a new one and it will work for that one and all the other terminals you open.
 
+## Contributors
 
-
-
+Ways to contribute to the project include (but are not limited to) providing a way of visualizing the histogram, and finding better ways of checking if the user is online or not.
